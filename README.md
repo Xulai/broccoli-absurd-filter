@@ -1,7 +1,8 @@
 broccoli-absurd-filter
 ===========
 
-[![Build Status](https://travis-ci.org/Xulai/broccoli-absurd-filter.png?branch=master)](https://travis-ci.org/Xulai/broccoli-absurd-filter)
+[![NPM](https://nodei.co/npm/broccoli-absurd-filter.png)](https://nodei.co/npm/broccoli-absurd-filter/)
+[![Build Status](https://travis-ci.org/Xulai/broccoli-absurd-filter.png?branch=master)](https://travis-ci.org/Xulai/broccoli-absurd-filter) [![Dependency Status](https://david-dm.org/Xulai/broccoli-absurd-filter.png)](https://david-dm.org/Xulai/broccoli-absurd-filter)
 
 ## Information
 
@@ -17,12 +18,6 @@ broccoli-absurd-filter
 
 More information about the CSS and HTML preprocessor AbsurdJS can be found at [https://github.com/krasimir/absurd](https://github.com/krasimir/absurd).
 Whereas information about Broccoli which is the building asset pipeline this is for can be found at [https://github.com/joliss/broccoli](https://github.com/joliss/broccoli)
-
-## Install
-
-```javascript
-npm install broccoli-absurd-filter
-```
 
 ## Usage
 
