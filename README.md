@@ -63,7 +63,6 @@ cssTree = absurd(cssTree, cssOptions);
 
 // Export the joint tree made by merging the htmlTree and cssTree
 module.exports = mergeTrees([htmlTree, cssTree]);
-};
 ```
 
 ## Options
