@@ -1,7 +1,7 @@
 broccoli-absurd-filter
 ===========
 
-[![Build Status](https://travis-ci.org/xulai/broccoli-absurd-filter.png?branch=master)](https://travis-ci.org/xulai/broccoli-absurd-filter)
+[![Build Status](https://travis-ci.org/Xulai/broccoli-absurd-filter.png?branch=master)](https://travis-ci.org/Xulai/broccoli-absurd-filter)
 
 ## Information
 
