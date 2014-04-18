@@ -11,9 +11,12 @@ broccoli-absurd-filter
 </tr>
 <tr>
 <td>Description</td>
-<td>[AbsurdJS](https://github.com/krasimir/absurd) plugin for [Broccoli](https://github.com/joliss/broccoli) using [broccoli-filter](https://github.com/joliss/broccoli-filter)</td>
+<td>AbsurdJS plugin for Broccoli using broccoli-filter</td>
 </tr>
 </table>
+
+More information about the CSS and HTML preprocessor AbsurdJS can be found at [https://github.com/krasimir/absurd](https://github.com/krasimir/absurd).
+Whereas information about Broccoli which is the building asset pipeline this is for can be found at [https://github.com/joliss/broccoli](https://github.com/joliss/broccoli)
 
 ## Install
 
