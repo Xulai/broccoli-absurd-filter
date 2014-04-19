@@ -2,11 +2,11 @@
 
 // Require absurd and mergetrees to make the magic happen
 var absurd = require('./index');
-var mergeTrees = require('broccoli-merge-trees')
+var mergeTrees = require('broccoli-merge-trees');
 
 // Make a tree for both html and css files which are spilt into different directories
 // as else absurd will try compile needless files wasting processing time
-var htmlTree = 'test/pages'
+var htmlTree = 'test/pages';
 var cssTree = 'test/styles';
 
 // Create some options to pass into absurd when parsing the js files to turn into CSS

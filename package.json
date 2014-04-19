@@ -1,6 +1,6 @@
 {
   "name": "broccoli-absurd-filter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Broccoli-Absurd filter to compile one to one files from a absurd supported format to json, html or css",
   "homepage": "https://github.com/xulai/broccoli-absurd-filter",
   "repository": {

@@ -22,15 +22,18 @@ describe('broccoli-absurd-filter', function() {
   describe('absurd()', function() {
     var htmlfiles = fs.readdirSync(htmlInputDir);
     var cssfiles = fs.readdirSync(cssInputDir);
+    var fileName;
+    var fullPath;
+    var baseName;
 
-    for (var index in htmlfiles) {
-      var fileName = htmlfiles[index];
-      var fullPath = htmlInputDir + fileName;
+    for (var indexhtml in htmlfiles) {
+      fileName = htmlfiles[indexhtml];
+      fullPath = htmlInputDir + fileName;
       if (fs.lstatSync(fullPath).isDirectory()) {
         continue;
       }
 
-      var baseName = path.basename(fileName, '.js');
+      baseName = path.basename(fileName, '.js');
       it('should compile absurdjs html ' + fileName, function() {
         var contents = fs.readFileSync(htmlOutputDir + '/' + baseName + '.css', 'utf8');
 
@@ -40,14 +43,14 @@ describe('broccoli-absurd-filter', function() {
       });
     }
 
-    for (var index in cssfiles) {
-      var fileName = cssfiles[index];
-      var fullPath = cssInputDir + fileName;
+    for (var indexcss in cssfiles) {
+      fileName = cssfiles[indexcss];
+      fullPath = cssInputDir + fileName;
       if (fs.lstatSync(fullPath).isDirectory()) {
         continue;
       }
 
-      var baseName = path.basename(fileName, '.js');
+      baseName = path.basename(fileName, '.js');
       it('should compile absurdjs css ' + fileName, function() {
         var contents = fs.readFileSync(cssOutputDir + '/' + baseName + '.css', 'utf8');
 
