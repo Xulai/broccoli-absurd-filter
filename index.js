@@ -37,7 +37,7 @@ absurdFilter.prototype.processString = function(str, file) {
     }
   }
 
-  return this.absurd.import(__dirname + fileNamePath).compile(this.options);
+  return this.absurd.import(fileNamePath).compile(this.options);
 };
 
 module.exports = absurdFilter;
