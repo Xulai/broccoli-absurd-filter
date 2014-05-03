@@ -41,15 +41,17 @@ var htmlOptions = {
   data: { // Data to be put into the html
     name: 'Daniel Beauchamp'
   },
-  minify: true // False by default in absurd, here for example
+  minify: true, // False by default in absurd, here for example
+	root: __dirname // Set the root else it will import the file with relative pathing.
 };
 
 // Create some options to pass into absurd when parsing the js files to turn into CSS
 var cssOptions = {
   morph: false, // Default is CSS
-  minify: true
+  minify: true,
+	root: __dirname
 };
-// See more options on the absurdjs website/github linked below
+// See more options on the absurdjs website/github linked in the README.md
 
 // Htmlify the javascript files.
 htmlTree = absurd(htmlTree, htmlOptions);

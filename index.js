@@ -20,8 +20,16 @@ absurdFilter.prototype.constructor = absurdFilter;
 absurdFilter.prototype.extensions = ['js', 'json', 'yaml', 'yml', 'css'];
 
 absurdFilter.prototype.processString = function(str, file) {
-  var fileNamePath = '/' + this.inputTree + '/' + file;
+  var fileNamePath;
   var compiledResult;
+	var root = this.options.root;
+
+	if(root){
+		fileNamePath  = root + '/' + this.inputTree + '/' + file;
+	}
+	else {
+	 fileNamePath = '../../' + this.inputTree + '/' + file;
+	}
 
   this.absurd.flush();
 
