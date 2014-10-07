@@ -22,14 +22,13 @@ absurdFilter.prototype.extensions = ['js', 'json', 'yaml', 'yml', 'css'];
 absurdFilter.prototype.processString = function(str, file) {
   var fileNamePath;
   var compiledResult;
-	var root = this.options.root;
+  var root = this.options.root;
 
-	if(root){
-		fileNamePath  = root + '/' + this.inputTree + '/' + file;
-	}
-	else {
-	 fileNamePath = '../../' + this.inputTree + '/' + file;
-	}
+  if(root){
+    fileNamePath  = root + '/' + this.inputTree + '/' + file;
+  } else {
+   fileNamePath = '../../' + this.inputTree + '/' + file;
+  }
 
   this.absurd.flush();
 
@@ -38,9 +37,8 @@ absurdFilter.prototype.processString = function(str, file) {
   if(this.options.morph) {
     this.absurd.morph(this.options.morph);
     if(this.options.morph == 'jsonify'){
-        this.targetExtension = 'json';
-    }
-    else {
+      this.targetExtension = 'json';
+    } else {
       this.targetExtension = this.options.morph;
     }
   }
